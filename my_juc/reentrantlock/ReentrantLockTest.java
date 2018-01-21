@@ -17,9 +17,9 @@ public class ReentrantLockTest {
 	 * void
 	 */
 	public static void lockTest() {
-		MyThread t1=new MyThread();
-		MyThread t2=new MyThread();
-		MyThread t3=new MyThread();
+		WorkThread t1=new WorkThread();
+		WorkThread t2=new WorkThread();
+		WorkThread t3=new WorkThread();
 		
 		t1.start();
 		t2.start();

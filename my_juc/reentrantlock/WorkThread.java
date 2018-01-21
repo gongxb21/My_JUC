@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
  *
  * 2018年1月20日
  */
-public class MyThread extends Thread{
+public class WorkThread extends Thread{
 	
 	/**
 	 * 这个可以证明ReentrantLock 是一个对象锁
