@@ -9,15 +9,15 @@ import java.util.concurrent.Future;
 /**
  * @author gongxb
  *
- * 2018年1月21日
+ * 2018锟斤拷1锟斤拷21锟斤拷
  */
 public class CallThread implements Callable {
 
 	@Override
 	public String call() throws Exception {
-		System.out.println(" call method");
+		system.out.println(" call method");
 		Thread.sleep(1000);
-		return "123";
+		return "1234";
 	}
 	
 	public static void main(String[] args) throws InterruptedException, ExecutionException {
@@ -27,10 +27,10 @@ public class CallThread implements Callable {
 		es.shutdown();
 		
 		Thread.sleep(5000);
-	    System.out.println("主线程等待5秒, 当前时间为" + System.currentTimeMillis());
+	    System.out.println("锟斤拷锟竭程等达拷5锟斤拷, 锟斤拷前时锟斤拷为" + System.currentTimeMillis());
 	        
 	    String str = (String) future.get();
-	    System.out.println("Future已拿到数据, str = " + str + ", 当前时间为" + System.currentTimeMillis());
+	    System.out.println("Future锟斤拷锟矫碉拷锟斤拷锟斤拷, str = " + str + ", 锟斤拷前时锟斤拷为" + System.currentTimeMillis());
 	}
 	
 }
